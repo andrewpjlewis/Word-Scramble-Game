@@ -1,8 +1,3 @@
-global.words = [
-  { word: "test", hint: "just a test" },
-  { word: "game", hint: "fun" }
-];
-
 document.body.innerHTML = `
   <div class="word-class"></div>
   <div class="word"></div>
@@ -15,17 +10,22 @@ document.body.innerHTML = `
   <button class="check-word"></button>
 `;
 
+global.words = [{ word: "test", hint: "just a test" }];
 
 const { checkWord } = require('./script.js');
 
-describe('Word Scramble Game', () => {
-  test('checkWord should alert message if input is empty', () => {
-    const inputField = document.querySelector('input');
-    const messageElement = document.getElementById('message');
-    inputField.value = '';
+test('checkWord should show message when input is empty', () => {
+  const inputField = document.querySelector('input');
+  const messageElement = document.getElementById('message');
 
-    checkWord();
+  inputField.value = '';
+  checkWord();
 
-    expect(messageElement.textContent).toBe('Please enter a word!');
-  });
+  if (messageElement.textContent === 'Please enter a word!') {
+    console.log('PASS: Empty input shows correct message');
+  } else {
+    console.log('FAIL: Empty input did not show correct message');
+  }
+
+  expect(messageElement.textContent).toBe('Please enter a word!');
 });
