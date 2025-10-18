@@ -194,3 +194,5 @@ inputField.addEventListener("input", () => {
 
 // Initialize first game
 initGame();
+
+module.exports = { checkWord };

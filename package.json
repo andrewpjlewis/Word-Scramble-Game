@@ -1,0 +1,25 @@
+{
+  "name": "word-scramble-game",
+  "version": "1.0.0",
+  "description": "[![Live Demo](https://img.shields.io/badge/Play%20Now-Live%20Demo-39A7FF?style=for-the-badge&logo=github)](https://gz30eee.github.io/Word-Scramble-Game/)\r [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://www.mit.edu/~amini/LICENSE.md)",
+  "main": "jest.config.js",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewpjlewis/Word-Scramble-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/andrewpjlewis/Word-Scramble-Game/issues"
+  },
+  "homepage": "https://github.com/andrewpjlewis/Word-Scramble-Game#readme"
+}
